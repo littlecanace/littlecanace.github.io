@@ -60,15 +60,17 @@ function subscribeUserToPush(registration, publicKey) {
     });
 }
 
-if ('serviceWorker' in navigator && 'PushManager' in window) {
+if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         var publicKey = 'BOEQSjdhorIf8M0XFNlwohK3sTzO9iJwvbYU-fuXRF0tvRpPPMGO6d_gJC_pUQwBT7wD8rKutpNTFHOHN3VqJ0A';
         navigator.serviceWorker.register('/sw.js', {scope: '/'})
             .then(function (registration) {
-                return Promise.all([
-                    registration,
-                    askPermission()
-                ]);
+                if ('PushManager' in window) {
+                    return Promise.all([
+                        registration,
+                        askPermission()
+                    ]);
+                }
             }).then(function (result) {
                 var registration = result[0];
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
