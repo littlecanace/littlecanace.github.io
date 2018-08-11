@@ -1,14 +1,28 @@
-const version = "1.0.14";
-const name = "my-test-cache-" + version;
+`use strict`;
+
+const
+  version = '1.0.2',
+  name = version + '::PWAsite',
+  offlineURL = '/offline/',
+  installFilesEssential = [
+    '/',
+    '/manifest.json',
+    '/main.css',
+    '/main.js',
+    '/images/logo/logo152.png'
+  ].concat(offlineURL),
+  installFilesDesirable = [
+    '/favicon.ico',
+    '/images/logo/logo016.png',
+    '/images/hero/power-pv.jpg',
+    '/images/hero/power-lo.jpg',
+    '/images/hero/power-hi.jpg'
+  ];
 function installStaticFiles() {
     return caches.open(name).then(function (cache) {
+        cache.addAll(installFilesDesirable);
         // 通过 cache 缓存对象的 addAll 方法添加 precache 缓存
-        return cache.addAll([
-            '/',
-            '/index.html',
-            '/main.css',
-            '/main.js'
-        ]);
+        return cache.addAll(installFilesEssential);
     });
 
 }
@@ -81,7 +95,7 @@ this.addEventListener('fetch', function (event) {
 
                 // 请求成功的话，将请求缓存起来。
                 var responseClone = httpRes.clone();
-                caches.open('my-test-cache-v1').then(function (cache) {
+                caches.open(name).then(function (cache) {
                     cache.put(event.request, responseClone);
                 });
 
