@@ -1,21 +1,21 @@
 CACHE MANIFEST
-#ver:2018-8-14 23:23:33
+#ver:2018-8-14 23:30:37
 #plugin:5.0.5
 
 CACHE:
 /static/js/vendor.b2336e296ca9da2d1d5b.js
-/static/js/app.0903c545905fb857ecc0.js
+/static/js/app.c8f53b186499763bc87d.js
 /static/js/manifest.2ae2e69a05c33dfc65f8.js
-/static/css/app.fc85a11468ccfbcc2c7e6aeb56cc0415.css
+/static/css/app.a690e2f959b4bacb19bd1d72f3027b57.css
 /
-/logo016.png
-/favicon.ico
-/logo072.png
 /logo192.png
+/logo016.png
+/logo072.png
 /logo152.png
 /logo256.png
-/logo512.png
 /manifest.json
+/logo512.png
+/favicon.ico
 
 NETWORK:
 *
