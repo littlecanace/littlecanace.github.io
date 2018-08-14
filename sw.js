@@ -2,18 +2,18 @@ var __wpo = {
   "assets": {
     "main": [
       "/static/js/vendor.2bbb495a98031ed47a32.js",
-      "/static/js/app.d2a838a54fd86a5791af.js",
+      "/static/js/app.0903c545905fb857ecc0.js",
       "/static/js/manifest.2ae2e69a05c33dfc65f8.js",
-      "/static/css/app.5957ad3ae82710829260fdb1d3694923.css",
+      "/static/css/app.fc85a11468ccfbcc2c7e6aeb56cc0415.css",
       "/",
-      "/logo072.png",
       "/favicon.ico",
-      "/logo192.png",
       "/logo016.png",
       "/logo152.png",
       "/logo512.png",
-      "/manifest.json",
-      "/logo256.png"
+      "/logo072.png",
+      "/logo192.png",
+      "/logo256.png",
+      "/manifest.json"
     ],
     "additional": [],
     "optional": []
@@ -21,22 +21,22 @@ var __wpo = {
   "externals": [],
   "hashesMap": {
     "e8d09a0a012b959ea67b6f7bed649ba38023b465": "/static/js/vendor.2bbb495a98031ed47a32.js",
-    "8b11b5626ffc281c6369c4f0027558a3ae62b384": "/static/js/app.d2a838a54fd86a5791af.js",
+    "023e36accba47d9731d00fbef452ef8ddde1cee1": "/static/js/app.0903c545905fb857ecc0.js",
     "71dff9423565dde98338fe885c33098093408dcf": "/static/js/manifest.2ae2e69a05c33dfc65f8.js",
-    "3608421f922413777b6509695727241a7a906ab2": "/static/css/app.5957ad3ae82710829260fdb1d3694923.css",
-    "08e8344ffa67af724a3d13b4b485329339dcfde4": "/",
-    "e96f48dd6608e9d314cf6a6a4ce18e69fff85903": "/logo072.png",
+    "058a81a3c9ba8f6fb16cc8e761c43764a4b03dc2": "/static/css/app.fc85a11468ccfbcc2c7e6aeb56cc0415.css",
+    "eed6a049527db5ffb65a27acc2fdca1c92df2075": "/",
     "3c71d720513579390e169b768d6d84d07834d9d4": "/favicon.ico",
-    "78b54306fa4d0a79a9e58c84423dcb2eec045ad2": "/logo192.png",
     "c118a18c67b35a1449d0e0c5930e4e564c54e766": "/logo016.png",
     "f6e5a4b24ab65bb0b2b4c693b81162b223a325ac": "/logo152.png",
     "a84b688cda4183d2860babe725d6437d768783d9": "/logo512.png",
-    "a0be4033c39612669ac512c33ff5aee384aa30e7": "/manifest.json",
-    "a69f3f251d411ba842e9b3380de30eaf4ccb3a46": "/logo256.png"
+    "e96f48dd6608e9d314cf6a6a4ce18e69fff85903": "/logo072.png",
+    "78b54306fa4d0a79a9e58c84423dcb2eec045ad2": "/logo192.png",
+    "a69f3f251d411ba842e9b3380de30eaf4ccb3a46": "/logo256.png",
+    "a0be4033c39612669ac512c33ff5aee384aa30e7": "/manifest.json"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-8-14 22:33:51",
+  "version": "2018-8-14 22:40:55",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false
